@@ -16,7 +16,7 @@ body {
     color: white;
 }
 
-/* ================= NAVBAR ================= */
+
 
 .navbar {
     background: linear-gradient(90deg, #d4146b, #c2185b);
@@ -28,7 +28,7 @@ body {
     position: relative;
 }
 
-/* LEFT SIDE */
+
 
 .nav-left {
     display: flex;
@@ -54,7 +54,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* NAV LINKS */
+
 
 .nav-links {
     display: flex;
@@ -76,7 +76,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* RoVer Plus button style */
+
 
 .plus-btn {
     padding: 6px 14px;
@@ -84,7 +84,7 @@ body {
     border-radius: 6px;
 }
 
-/* RIGHT SIDE */
+
 
 .nav-right {
     display: flex;
@@ -126,7 +126,7 @@ body {
     box-shadow: 0 4px 12px rgba(255,255,255,0.2);
 }
 
-/* Mobile Menu Button */
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -161,7 +161,7 @@ body {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* ================= MAIN ================= */
+
 
 .main {
     flex: 1;
@@ -215,7 +215,7 @@ body {
     box-shadow: 0 0 30px rgba(212, 20, 107, 0.5);
 }
 
-/* ================= FOOTER ================= */
+
 
 .footer {
     background: #2b2f34;
@@ -269,7 +269,7 @@ body {
     color: white;
 }
 
-/* ================= POPUP STYLES ================= */
+
 
 .popup-overlay {
     position: fixed;
@@ -432,7 +432,7 @@ body {
     border-color: rgba(255,255,255,0.5);
 }
 
-/* ================= LOADING STYLES ================= */
+
 
 .loading-content {
     display: flex;
@@ -505,7 +505,7 @@ body {
     transition: all 0.5s ease;
 }
 
-/* ================= IFRAME STYLES ================= */
+
 
 .iframe-content {
     padding: 0;
@@ -520,7 +520,7 @@ body {
     background: white;
 }
 
-/* ================= ALERT POPUP STYLES ================= */
+
 
 .alert-popup .popup-container {
     display: none;
@@ -580,7 +580,7 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* ================= MOBILE RESPONSIVE STYLES ================= */
+
 
 @media (max-width: 1024px) {
     .footer {
